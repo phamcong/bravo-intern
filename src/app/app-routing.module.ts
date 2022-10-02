@@ -6,12 +6,18 @@ import {
   Routes,
   TitleStrategy,
 } from '@angular/router';
+import { ProductFormBisComponent } from './pages/product-form-bis/product-form-bis.component';
 import { ProductFormComponent } from './pages/product-form/product-form.component';
 const routes: Routes = [
   {
     path: 'vat-tu',
     title: 'Vật Tư',
     component: ProductFormComponent,
+  },
+  {
+    path: 'vat-tu-bis',
+    title: 'Vật Tư Bis',
+    component: ProductFormBisComponent,
   },
   {
     path: 'lay-nha-cung-cap',

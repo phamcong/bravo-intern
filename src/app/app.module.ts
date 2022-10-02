@@ -17,6 +17,7 @@ import { ControlGridLayoutPanelComponent } from './components/control-grid-layou
 import { ControlFormLabelPanelComponent } from './components/control-form-label-panel/control-form-label-panel.component';
 import { ErrorMessageComponent } from './components/error-message/error-message.component';
 import { CustomFormCheckboxComponent } from './components/custom-form-checkbox/custom-form-checkbox.component';
+import { ProductFormBisComponent } from './pages/product-form-bis/product-form-bis.component';
 
 
 
@@ -30,6 +31,7 @@ import { CustomFormCheckboxComponent } from './components/custom-form-checkbox/c
     MenuItemSidebarComponent,
     MenuErrorsSidebarComponent,
     ProductFormComponent,
+    ProductFormBisComponent,
     ControlFormFieldPanelComponent,
     ControlGridLayoutPanelComponent,
     ControlFormLabelPanelComponent,

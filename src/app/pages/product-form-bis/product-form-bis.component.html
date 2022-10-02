@@ -1,0 +1,21 @@
+<div class="main-content" *ngIf="{ formTabs: (formTabs$ | async) || [] } as vw">
+    <div class="tab__box">
+        <button [style.background]="tab === activeTab ? 'green': 'transparent'"
+                *ngFor="let tab of vw.formTabs" class="tab__link"
+                (click)="onChangeFormTab(tab)">
+            {{ tab.label }}
+        </button>
+    </div>
+    <ng-container *ngIf="productForm">
+        <form [formGroup]="productForm" class="product_form" novalidate autocomplete="off">
+            <div *ngFor="let tab of vw.formTabs">
+                <app-control-grid-layout-panel *ngIf="tab === activeTab"
+                                               [formFieldConfig]="tab.content"
+                                               [columnGap]="'1rem'"
+                                               [rowGap]="'0.3rem'"
+                                               [groupNameForm]="tab.label">
+                </app-control-grid-layout-panel>
+            </div>
+        </form>
+    </ng-container>
+</div>
